@@ -12,7 +12,7 @@
 
 -------------------------- 프로젝트하며 배운 내용 정리 --------------------------------
 WebRTC
-Real Time Communication
+Real Time Communication<br />
 웹/앱에서 별다른 소프트웨어 없이 카메라, 마이크 등을 사용하여 <strong>실시간으로 상호작용</strong>하는 기술.(P2P)
 JavaScript 기본 API
 
