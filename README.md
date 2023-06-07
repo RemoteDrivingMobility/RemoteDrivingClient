@@ -70,7 +70,18 @@ JavaScript 기본 API
 
 
 ----------------- 프로젝트 하면서 알게 된 사실 ---------------------
-1. axios와 fetch의 
+1. axios와 fetch의 차이<br />
+-> fetch 요청은 timeOut, BadGateWay등의 에러가 아니라 서버에서 401 등의 에러를 반환한 경우 성공으로 간주<br />
+fetch(url, method).then(result).catch(err)등의 상황에서 서버에서 정상적으로 401등의 error 를 반환한 경우<br />
+then이 실행됨<br />
+<br /><br />
+-> axios 요청은 정상적으로 반환된 4xx, 5xx의 경우를 통상적인 <strong>실패</strong>로 인식함<br />
+-> axios.post(url, data).then(result).catch(err)의 경우 catch가 실행<br />
+<br /><br />
+
+2. signalling을 하는 방법은 굉장히 많은 방법이 있음.<br />
+-> socket.js나 rtcPeerConnection등을 이용하며 심지어는 js에서 기구축된 시그널링 서버를 제공하는 api도 존재함.<br />
+-> 자신의 프로젝트에 맞게 사용하려면 직접 정의해서 사용하는 방식이 좋아보임.
 
 
 
